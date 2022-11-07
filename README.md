@@ -26,7 +26,7 @@ THEN the saved events persist
 ```
 ## Screenshot
 
-
+![rdeaki github io_day-planner_](https://user-images.githubusercontent.com/106924254/199858295-627cb7f5-37de-4bd8-91e4-15cc4f511753.png)
 
 ## Website URL
 
