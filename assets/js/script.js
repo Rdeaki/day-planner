@@ -1,7 +1,10 @@
+// displays current date
 var rightNow = moment().format("dddd, MMMM Do");
 $('#currentDay').append(rightNow);
 
+
 $(document).ready(function () {
+    
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
         var text = $(this).siblings(".description").val();
@@ -21,6 +24,7 @@ $(document).ready(function () {
     $("#hour15 .description").val(localStorage.getItem("hour15"));
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
+
 
     function timeTracker() {
         // gets the current time
@@ -49,6 +53,11 @@ $(document).ready(function () {
             }
         })
     }
+
+    setInterval(function() {
+
+        timeTracker();
+    }, (1000 * 60) * 5);
 
     timeTracker();
 });
